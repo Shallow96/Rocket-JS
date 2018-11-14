@@ -1,0 +1,184 @@
+<!doctype html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Lesson 7</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--<link rel="stylesheet" href="https:/resources/demos/style.css">-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script>
+        $( function() {
+            $( "#dialog" ).dialog({
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "explode",
+                    duration: 1000
+                }
+            });
+
+            $( "#opener" ).on( "click", function() {
+                $( "#dialog" ).dialog( "open" );
+            });
+        } );
+    </script>
+</head>
+<body>
+
+<div id="dialog" title="Fogot your passord?">
+    <form class="new_widget" action="" method="post">
+        <label >
+            Enter your <br> email
+        </label>
+        <input type="text">
+        <button>RESET PASSWORD</button>
+    </form>
+    <h3>or</h3>
+    <a href="#">Log In Using Facebook</a>
+</div>
+<!--<button id="opener">Open Dialog</button>-->
+    <div class="white-bottom">
+        <header>
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="images/logo.png">
+                </a>
+                <div class="right-header">
+                   <div class="top_form">
+                        <label>member login</label>
+                        <input type="text" name="search" placeholder="Name">
+                        <input type="password" name="password">
+                        <button id="opener">LOGIN</button>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item menu__item--current"><a href="#" class="menu__link"><span class="menu__helper">blog</span></a></li>
+                            <li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">rewards</span></a></li>
+                            <li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">BECOME</span></a></li>
+                            <li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">faq</span></a></li>
+                            <li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">menu</span></a></li>
+                            <li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">About us</span></a></li>
+                            <li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">HOME</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </header>
+    </div>
+    <section >
+        <div class="container">
+            <h1>
+                about us
+            </h1>
+            <div class="content">
+                <p>
+                    Don’t be fooled by our menu prices. We are home of the BUY 1 GET 1 FREE DAILY DEAL! Buy 1/8th get 1/8th FREE! Buy 1/4oz get 1/4oz FREE! Buy 1/2oz get 1/2oz FREE! Buy 1oz get 1oz FREE! We are the premier San Diego medical marijuana delivery service located in the heart of San Diego, delivering to all certified cannabis patients who desire safe access to medical marijuana. Our private members-only Collective serves as a mutual-benefit nonprofit corporation operating in strict accordance with Prop 215, SB 420 and California state medical marijuana laws.
+                </p>
+                <p>
+                    We supply San Diego with high-quality medical marijuana by delivery to anywhere in the city. In doing so we adhere to the highest standards around health, safety, and patients’ rights. Our collective group of cannabis patients benefit from our selection of high-quality medical-grade cannabis; our experienced and welcoming professional staff; And our safe, reliable, discreet and speedy home delivery service to our San Diego patient members.
+                </p>
+                <p>
+                    Our staff is professional, friendly, and able to advise our patients on the wide-range of cannabis products we provide, including: Cannabis (Marijuana), Pre-Rolls, Edibles, Hash, Kief, Concentrates, Tinctures, Vaporizers, Pipes, and many, many more. Delivering to San Diego is our specialty, but our patients are our passion.
+                </p>
+            </div>
+            <div>
+                <img src="images/down_img.png">
+            </div>
+        </div>
+    </section>
+    <!--<a href="#" class="sign">-->
+        <!--<i class="fas fa-user-plus"></i>-->
+        <!--<span>-->
+            <!--Sign up now-->
+        <!--</span>-->
+    <!--</a>-->
+    <footer>
+    <div class="container">
+        <div class="left-footer">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Become a Member</a>
+                </li>
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+            </ul>
+        </div>
+        <div class="middle-footer">
+            <ul>
+                <li>
+                    <a href="#">Rewards Store</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right-footer">
+            <nav>
+                Follow us on
+            </nav>
+            <nav class="footer-logo">
+                <a href="#"><img src="images/icon_facebook.png"></a>
+                <a href="#" class="twitter"><img src="images/icon_twitter.png"></a>
+                <a href="#"><img src="images/icon_canabis.png"></a>
+            </nav>
+        </div>
+    </div>
+    </footer>
+<script src="js/classie.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script>
+    (function() {
+        [].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+            var menuItems = menu.querySelectorAll('.menu__link'),
+                setCurrent = function(ev) {
+                    ev.preventDefault();
+
+                    var item = ev.target.parentNode; // li
+
+                    // return if already current
+                    if (classie.has(item, 'menu__item--current')) {
+                        return false;
+                    }
+                    // remove current
+                    classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+                    // set current
+                    classie.add(item, 'menu__item--current');
+                };
+
+            [].slice.call(menuItems).forEach(function(el) {
+                el.addEventListener('mouseover', setCurrent);
+            });
+        });
+
+        [].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
+            link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
+            new Clipboard(link);
+            link.addEventListener('click', function() {
+                classie.add(link, 'link-copy--animate');
+                setTimeout(function() {
+                    classie.remove(link, 'link-copy--animate');
+                }, 300);
+            });
+        });
+    })(window);
+</script>
+</body>
+</html>
